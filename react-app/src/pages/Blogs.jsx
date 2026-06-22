@@ -62,6 +62,7 @@ const Blogs = () => {
   }, []);
 
   return (
+    <div>
     <div className="px-12 pb-20 max-w-7xl mx-auto">
       <section className="relative mb-20 group mt-8">
         <div className="grid grid-cols-12 gap-0 overflow-hidden rounded-xl bg-surface-container-low border border-[#4d4635]/10">
@@ -144,7 +145,11 @@ const Blogs = () => {
         ))}
       </div>
 
-      <footer className="bg-surface-container-lowest border-t border-outline-variant/10 px-12 py-16 lg:px-20">
+      
+
+
+    </div>
+    <footer className="bg-surface-container-lowest border-t border-outline-variant/10 px-12 py-16 lg:px-20">
   <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
     <div className="col-span-1 md:col-span-2">
       <h4 className="mb-4 text-xl font-serif text-primary">Chess Club IITK</h4>
@@ -212,7 +217,7 @@ const Blogs = () => {
         </a>
 
         <a
-          href="mailto:chessclub@iitk.ac.in"
+          href="mailto:chessiitk21@gmail.com"
           className="inline-flex h-9 w-full items-center justify-start rounded-full border border-outline-variant/30 px-4 text-xs font-medium text-on-surface-variant transition-all hover:border-primary hover:text-primary"
         >
           Email
@@ -270,10 +275,7 @@ const Blogs = () => {
     <p>© 2026 IIT Kanpur Chess Club. All Rights Reserved.</p>
     <p>Designed for the Intellectual Elite</p>
   </div>
-</footer>
-
-
-    </div>
+</footer></div>
   );
 };
 
