@@ -118,7 +118,7 @@ const Blogs = () => {
       <div className={viewMode === 'grid' ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" : "flex flex-col space-y-6 max-w-4xl mx-auto"}>
         {BLOG_POSTS.map(post => (
           <Link key={post.id} to={`/blog/${post.id}`} className={`flex bg-surface-container-low group cursor-pointer border border-transparent hover:border-outline-variant/20 transition-all duration-300 ${viewMode === 'grid' ? 'flex-col' : 'flex-col md:flex-row'}`}>
-            <div className={`overflow-hidden relative ${viewMode === 'grid' ? 'h-64' : 'h-48 md:h-full md:w-64 flex-shrink-0'}`}>
+            <div className={`overflow-hidden relative ${viewMode === 'grid' ? 'h-80' : 'h-64 md:h-full md:w-48 flex-shrink-0'}`}>
               <img alt={post.tag} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src={post.image} />
               <div className="absolute top-4 left-4">
                 <span className="bg-surface/80 backdrop-blur-md px-3 py-1 text-[9px] font-label tracking-widest uppercase text-on-surface rounded-sm">{post.tag}</span>
