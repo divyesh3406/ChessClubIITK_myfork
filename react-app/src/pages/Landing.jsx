@@ -3,6 +3,7 @@ import { useAuth } from '../context/AuthContext';
 import { motion } from 'framer-motion';
 import SliderMaskText from '../components/SliderMaskText';
 import chessboardImg from '../assets/chessboard.jpg';
+import homePgBg from './home-pg-bg.png';
 
 const Landing = () => {
   const { isLoggedIn } = useAuth();
@@ -28,7 +29,10 @@ const Landing = () => {
   return (
     <>
       {/* Section 1: Brand Intro */}
-      <section className="relative min-h-[85vh] flex items-center justify-center px-6 md:px-12 lg:px-20 overflow-hidden bg-[#131313]">
+      <section
+        className="relative min-h-[85vh] flex items-center justify-center px-6 md:px-12 lg:px-20 overflow-hidden bg-[#131313] bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${homePgBg})` }}
+      >
         {/* Cinematic golden dust & lighting beam effect */}
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-radial from-yellow-600/10 via-yellow-900/5 to-transparent blur-[120px] pointer-events-none z-0"></div>
         <div className="absolute bottom-1/3 right-1/4 w-[400px] h-[200px] bg-radial from-yellow-600/5 to-transparent blur-[160px] pointer-events-none z-0"></div>
