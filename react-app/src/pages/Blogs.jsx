@@ -4,8 +4,18 @@ import fresherImg from '../assets/fresher_league_recap_1775765383248.png';
 import grandSwissImg from '../assets/grand_swiss_recap_1775765397656.png';
 import smotheredMateImg from '../assets/smothered_mate_puzzle_1775765413177.png';
 import endgameImg from '../assets/endgame_puzzle_1775765427614.png';
+import tournamentImg from '../assets/chess_tournament_gallery_1775821881801.png';
 
 const BLOG_POSTS = [
+  {
+    id: 5,
+    title: "IIT Kanpur's First FIDE-Rated Rapid Tournament: A New Chapter",
+    date: "January 26, 2026",
+    tag: "Tournament News",
+    excerpt: "IIT Kanpur steps onto the rated chess map with its first FIDE-rated rapid tournament, a 9-round Swiss event carrying a prize pool of INR 2,00,000.",
+    author: "Chess Club IITK",
+    image: tournamentImg
+  },
   {
     id: 3,
     title: "IITK Grand Swiss: Path to the Candidates",

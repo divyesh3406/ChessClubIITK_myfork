@@ -1,7 +1,82 @@
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import fresherImg from '../assets/fresher_league_recap_1775765383248.png';
+import tournamentImg from '../assets/chess_tournament_gallery_1775821881801.png';
 
 const BlogPost = () => {
+  const { id } = useParams();
+
+  if (id === '5') {
+    return (
+      <div className="px-12 py-12 max-w-4xl mx-auto blog-content">
+        <div className="mb-12 flex items-center gap-3 text-xs font-label uppercase tracking-widest text-on-surface-variant/50">
+          <Link to="/blogs" className="hover:text-primary transition-colors">Archive</Link>
+          <span>/</span>
+          <span className="text-primary">Tournament News</span>
+        </div>
+
+        <h1 className="text-5xl lg:text-6xl font-serif font-bold leading-tight mb-8 text-on-surface">IIT Kanpur's First FIDE-Rated Rapid: A New Chapter</h1>
+
+        <div className="flex items-center gap-6 mb-12 border-b border-outline-variant/15 pb-8">
+          <div className="flex items-center space-x-3">
+            <div className="w-10 h-10 rounded-full border border-primary/20 p-0.5 bg-primary-container/10 flex items-center justify-center">
+              <span className="material-symbols-outlined text-primary">emoji_events</span>
+            </div>
+            <div>
+              <p className="text-sm font-bold text-on-surface">Chess Club IITK</p>
+              <p className="text-[10px] text-on-surface-variant font-label uppercase tracking-widest">Tournament Desk</p>
+            </div>
+          </div>
+          <div className="h-8 w-px bg-outline-variant/30"></div>
+          <div className="text-[10px] font-label uppercase tracking-widest text-on-surface-variant pt-1">
+            January 26, 2026 - 5 Min Read
+          </div>
+        </div>
+
+        <div className="w-full h-[400px] rounded-xl overflow-hidden mb-16 relative shadow-2xl shadow-black/50">
+          <img alt="IIT Kanpur FIDE-rated rapid tournament" className="w-full h-full object-cover" src={tournamentImg}/>
+          <div className="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60"></div>
+        </div>
+
+        <article className="font-body text-lg text-on-surface-variant">
+          <p className="text-2xl text-on-surface font-serif leading-relaxed mb-10 first-letter:float-left first-letter:text-7xl first-letter:pr-4 first-letter:font-serif first-letter:text-primary">
+            IIT Kanpur is preparing to host its first FIDE-rated rapid chess tournament, marking a serious step forward for competitive chess on campus and in Kanpur.
+          </p>
+
+          <p>For years, chess at IITK has lived in many forms: hostel blitz sessions, practice rooms, internal championships, online leagues, and long tournament nights where one move could rewrite an entire leaderboard. The club was formed in 2007 with that same spirit: to give chess players on campus a place to compete, learn, and build a culture around the game.</p>
+
+          <p>This event takes that culture into a larger arena. Scheduled for February 7, 2026, at Yoga Hall, New SAC, IIT Kanpur, the tournament will be a 9-round Swiss rapid event with a 10+5 time control and a prize pool of INR 2,00,000.</p>
+
+          <h3>Why This Matters</h3>
+          <p>Kanpur has many talented players, but fewer regular opportunities to play high-quality rated events close to home. A FIDE-rated tournament on campus gives students, local players, club players, and independent participants a chance to compete under formal conditions without having to travel far for serious exposure.</p>
+
+          <p>It also reflects the direction Chess Club IITK has been moving in. The club already runs a full internal championship cycle, including events such as the Grand Swiss, Candidates Tournament, Chess Cup, and Speed Chess Championship. Alongside that, campus practice sessions, internal tournaments, street chess, and collegiate events have kept participation active throughout the year.</p>
+
+          <h3>From Campus Boards to Rated Play</h3>
+          <p>The move toward a FIDE-rated rapid tournament has been discussed within the club for several years. Logistics, academic schedules, and coordination challenges delayed the idea, but the ambition stayed alive. Now, with the first edition finally taking shape, IITK has the chance to turn a long-running club goal into a visible milestone.</p>
+
+          <div className="my-12 p-8 bg-surface-container-low border border-outline-variant/15 rounded-xl">
+            <h4 className="text-primary font-label text-xs uppercase tracking-widest mb-4">Tournament Snapshot</h4>
+            <p className="text-sm font-serif italic m-0">Date: February 7, 2026. Venue: Yoga Hall, New SAC, IIT Kanpur. Format: 9-round Swiss. Time control: 10+5 rapid. Prize pool: INR 2,00,000.</p>
+          </div>
+
+          <p>More than just another tournament, this is a statement that IIT Kanpur wants to be a serious home for over-the-board chess. For participants, it is a chance to test preparation, nerves, calculation, and clock handling in a rated field. For the club, it is the beginning of a bigger offline chapter.</p>
+
+          <p className="text-sm text-on-surface-variant/70">Based on reporting by ChessBase India.</p>
+        </article>
+
+        <div className="mt-20 border-t border-outline-variant/15 pt-10 flex items-center justify-between">
+          <Link to="/blogs" className="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors text-sm font-label uppercase tracking-widest">
+              <span className="material-symbols-outlined text-sm">arrow_back</span>
+              Back to Archive
+          </Link>
+          <a href="https://www.chessbase.in/news/first-fide-rated-rapid-chess-tournament-at-iitk" target="_blank" rel="noreferrer" className="text-primary text-sm font-label uppercase tracking-widest border-b border-primary/30 pb-1 hover:border-primary transition-all">
+            Source
+          </a>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="px-12 py-12 max-w-4xl mx-auto blog-content">
       {/* Breadcrumb */}
