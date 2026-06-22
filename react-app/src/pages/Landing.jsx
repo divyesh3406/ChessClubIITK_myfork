@@ -96,7 +96,7 @@ const Landing = () => {
           viewport={{ once: true }}
           className="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center"
         >
-          <h2 className="text-6xl md:text-8xl font-serif italic mb-8 leading-tight">
+          <h2 className="text-6xl md:text-8xl font-serif mb-8 leading-tight">
             Silence the Noise.<br />
             <span className="text-primary">Find the Move.</span>
           </h2>
