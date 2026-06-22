@@ -65,7 +65,10 @@ const PRE_SCHEDULED_EVENTS = [
 
 const Calendar = () => {
   const { isLoggedIn } = useAuth();
-  const [currentDate, setCurrentDate] = useState(new Date(2026, 4, 1)); // May 2026 initial render for 2026-27 tenure
+  const [currentDate, setCurrentDate] = useState(
+    new Date(new Date().getFullYear(), new Date().getMonth(), 1)
+  ) ;
+
   const [events, setEvents] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isViewModalOpen, setIsViewModalOpen] = useState(false);
