@@ -11,13 +11,13 @@ import Footer from '../components/Footer';
 const BLOG_POSTS = [
   {
     id: 1,
-    title: "Fresher's Chess League 2026: An Absolute Thriller!",
+    title: "Fresher's Chess League 2025: An Absolute Thriller!",
     date: "August 25, 2025",
     tag: "Event Recap",
     excerpt: "Recapping the absolute hype surrounding the offline auctions in the Senate Hall, analyzing the intense Round Robin pool matches at the OAT, and spotlighting the brilliant knockout blunders that ultimately led the underdogs to gold memberships.",
     author: "Tanmay Sahare",
     authorRole: "Tournament Coordinator",
-    readTime: "8 Min Read",
+    readTime: "3 Min Read",
     image: fresherImg
   },
   // {
@@ -93,37 +93,37 @@ const Blogs = () => {
     <div>
     <div className="px-12 pb-20 max-w-7xl mx-auto">
       {featuredPost && (
-        <section className="relative mb-20 group mt-8">
-          <div className="grid grid-cols-12 gap-0 overflow-hidden rounded-xl bg-surface-container-low border border-[#4d4635]/10">
-            <div className="col-span-15 lg:col-span-7 h-[600px] overflow-hidden">
-              <img alt={featuredPost.title} className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700" src={featuredPost.image} />
-
-            </div>
-            <div className="col-span-12 lg:col-span-5 p-12 flex flex-col justify-center bg-surface-container">
-              <div className="flex items-center space-x-3 mb-6">
-                <span className="px-3 py-1 bg-primary/10 text-primary text-[10px] font-label tracking-widest uppercase rounded-full">{featuredPost.tag}</span>
-                <span className="text-on-surface-variant/40 text-[10px] font-label uppercase">{featuredPost.readTime || "5 Min Read"}</span>
-
+        <section className="relative mb-20 mt-8">
+          <Link 
+            to={`/blog/${featuredPost.id}`}
+            className="block overflow-hidden rounded-xl bg-surface-container-low border border-[#4d4635]/10 hover:border-outline-variant/20 transition-all duration-300 group cursor-pointer"
+          >
+            <div className="grid grid-cols-12 gap-0">
+              <div className="col-span-12 lg:col-span-7 h-[600px] overflow-hidden">
+                <img alt={featuredPost.title} className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700" src={featuredPost.image} />
               </div>
-              <h2 className="text-5xl font-serif font-bold leading-tight mb-6 text-on-surface">{featuredPost.title}</h2>
-
-              <p className="text-on-surface-variant font-body leading-relaxed mb-8 text-sm min-h-[80px]">
-                {displayedDesc}
-                <span className="animate-pulse border-r-2 border-primary ml-[2px] h-[1em] inline-block -mb-[2px]"></span>
-              </p>
-              <div className="flex items-center justify-between mt-auto">
-                <div className="flex items-center space-x-3">
-                  <div>
-                    <p className="text-xs font-bold text-on-surface">{featuredPost.author}</p>
-                    <p className="text-[10px] text-on-surface-variant">{featuredPost.authorRole || "Coordinator, Chess Club IITK"}</p>
-      
-                  </div>
+              <div className="col-span-12 lg:col-span-5 p-12 flex flex-col justify-center bg-surface-container">
+                <div className="flex items-center space-x-3 mb-6">
+                  <span className="px-3 py-1 bg-primary/10 text-primary text-[10px] font-label tracking-widest uppercase rounded-full">{featuredPost.tag}</span>
+                  <span className="text-on-surface-variant/40 text-[10px] font-label uppercase">{featuredPost.readTime || "5 Min Read"}</span>
                 </div>
-                <Link to={`/blog/${featuredPost.id}`} className="text-primary font-label text-xs uppercase tracking-widest border-b border-primary/30 pb-1 hover:border-primary transition-all">Read Article</Link>
-
+                <h2 className="text-5xl font-serif font-bold leading-tight mb-6 text-on-surface group-hover:text-primary transition-colors">{featuredPost.title}</h2>
+                <p className="text-on-surface-variant font-body leading-relaxed mb-8 text-sm min-h-[80px]">
+                  {displayedDesc}
+                  <span className="animate-pulse border-r-2 border-primary ml-[2px] h-[1em] inline-block -mb-[2px]"></span>
+                </p>
+                <div className="flex items-center justify-between mt-auto">
+                  <div className="flex items-center space-x-3">
+                    <div>
+                      <p className="text-xs font-bold text-on-surface">{featuredPost.author}</p>
+                      <p className="text-[10px] text-on-surface-variant">{featuredPost.authorRole || "Coordinator, Chess Club IITK"}</p>
+                    </div>
+                  </div>
+                  <span className="text-primary font-label text-xs uppercase tracking-widest border-b border-primary/30 pb-1 group-hover:border-primary transition-all">Read Article</span>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         </section>
       )}
 
@@ -166,7 +166,7 @@ const Blogs = () => {
                 </div>
               </div>
               <div className={`flex flex-col flex-grow ${viewMode === 'grid' ? 'p-8' : 'p-6 md:p-8'}`}>
-                <span className="text-[10px] font-label text-on-surface-variant/50 uppercase mb-3">{post.date}</span>
+                <span className="text-[10px] font-label text-on-surface-variant/50 uppercase mb-3">{post.date} • {post.readTime}</span>
                 <h5 className="text-xl font-serif font-bold mb-4 group-hover:text-primary transition-colors">{post.title}</h5>
                 <p className={`text-sm text-on-surface-variant leading-relaxed line-clamp-3 ${viewMode === 'grid' ? 'mb-6' : 'mb-4'}`}>
                   {post.excerpt}
