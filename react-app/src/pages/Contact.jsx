@@ -1,15 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import profileImg from '../assets/profile_image.webp';
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
+import aarushWaghImg from "../assets/secretaries/aarush_wagh.jpg";
 import adityaImg from "../assets/secretaries/aditya.jpg";
 import akshatImg from "../assets/secretaries/akshat.jpeg";
 import anantImg from "../assets/secretaries/anant.jpeg";
 import arhamImg from "../assets/secretaries/arham.jpeg";
-// import arushImg from "../assets/secretaries/arush.HEIC";
+import arushImg from "../assets/secretaries/arush.jpg";
 import aryanImg from "../assets/secretaries/aryan.jpeg";
 import chaitanyaImg from "../assets/secretaries/chaitanya.jpg";
 import divyeshImg from "../assets/secretaries/divyesh.jpeg";
@@ -25,34 +22,11 @@ import nishantImg from "../assets/secretaries/nishant.jpg";
 import prajwalImg from "../assets/secretaries/prajwal.jpeg";
 import pratikImg from "../assets/secretaries/pratik.jpg";
 import swayamImg from "../assets/secretaries/swayam.JPG";
-// import anantImg from '../assets/anant.webp';
-
->>>>>>> be50e3eeff57bda8702e609ae520963b71affe11
+import siddhantImg from "../assets/secretaries/siddhant.jpg";
+import shaoniImg from "../assets/secretaries/shaoni.jpg";
+import dipinImg from "../assets/secretaries/dipin.jpg";
+import lakshyaImg from "../assets/secretaries/lakshya.jpg";
 import Footer from '../components/Footer';
-
-=======
-import adityaImg from "../assets/secretaries/aditya.jpg";
-import akshatImg from "../assets/secretaries/akshat.jpeg";
-import anantImg from "../assets/secretaries/anant.jpeg";
-import arhamImg from "../assets/secretaries/arham.jpeg";
-// import arushImg from "../assets/secretaries/arush.HEIC";
-import aryanImg from "../assets/secretaries/aryan.jpeg";
-import chaitanyaImg from "../assets/secretaries/chaitanya.jpg";
-import divyeshImg from "../assets/secretaries/divyesh.jpeg";
-import furzaanImg from "../assets/secretaries/furzaan.png";
-import hariomImg from "../assets/secretaries/hariom.jpg";
-import kdheerajImg from "../assets/secretaries/kdheeraj.png";
-import kratagyaImg from "../assets/secretaries/kratagya.jpg";
-import madhavImg from "../assets/secretaries/madhav.jpg";
-import mayankBhakhandImg from "../assets/secretaries/mayank_bhakhand.jpeg";
-import mayankGautamImg from "../assets/secretaries/mayank_gautam.webp";
-import mishthyImg from "../assets/secretaries/mishthy.jpg";
-import nishantImg from "../assets/secretaries/nishant.jpg";
-import prajwalImg from "../assets/secretaries/prajwal.jpeg";
-import pratikImg from "../assets/secretaries/pratik.jpg";
-import swayamImg from "../assets/secretaries/swayam.JPG";
-// import anantImg from '../assets/anant.webp';
->>>>>>> a2d6e02c22c0631d4832ee00f6ab1ae9423987c3
 const COORDINATORS = [
   {
     id: 'coord-0',
@@ -99,118 +73,142 @@ const COORDINATORS = [
 const SECRETARIES = [
   {
     id: "sec-0",
+    name: "Aarush Waghmare",
+    role: "Secretary",
+    funnyDescription: `"En croissant"`,
+    email: "aarushw25@iitk.ac.in",
+    image: aarushWaghImg,
+  },
+  {
+    id: "sec-1",
     name: "Aditya Dum",
     role: "Secretary",
-    funnyDescription: `"I am high on chess, let's play and enjoy this addiction!!"`,
+    funnyDescription: `"I am high on chess,let's play and enjoy this addiction!!"`,
     email: "aditya.dum@iitk.ac.in",
     image: adityaImg,
   },
   {
-    id: "sec-1",
+    id: "sec-2",
     name: "Akshat Joshi",
     role: "Secretary",
-    funnyDescription: `"Every move is a lesson."`,
-    email: "akshat.joshi@iitk.ac.in",
+    funnyDescription: `"The plan was perfect until I played it"`,
+    email: "akshatj25@iitk.ac.in",
     image: akshatImg,
   },
   {
-    id: "sec-2",
+    id: "sec-3",
     name: "Anant Singh",
     role: "Secretary",
-    funnyDescription: `"Still looking for the best move."`,
+    funnyDescription: `"Still looking for the best move"`,
     email: "anantsi25@iitk.ac.in",
     image: anantImg,
   },
   {
-    id: "sec-3",
+    id: "sec-4",
     name: "Arham Nadeem",
     role: "Secretary",
-    funnyDescription: `"After every blunder, there is a great move!"`,
-    email: "arham.nadeem@iitk.ac.in",
+    funnyDescription: `"After every blunder, there is a great move !"`,
+    email: "arhamn25@iitk.ac.in",
     image: arhamImg,
   },
   {
-    id: "sec-4",
+    id: "sec-5",
     name: "Arush Jain",
     role: "Secretary",
     funnyDescription: `"My opening preparation lasts longer than my actual games."`,
     email: "arush.jain@iitk.ac.in",
-    // image: arushImg,
-  },
-  {
-    id: "sec-5",
-    name: "Aryan Kurade",
-    role: "Secretary",
-    funnyDescription: `"My opponents fear my unpredictability, so do I."`,
-    email: "aryan.kurade@iitk.ac.in",
-    image: aryanImg,
+    image: arushImg,
   },
   {
     id: "sec-6",
+    name: "Aryan Kurade",
+    role: "Secretary",
+    funnyDescription: `"My opponents fear my unpredictability, so do I."`,
+    email: "skaryan25@iitk.ac.in",
+    image: aryanImg,
+  },
+  {
+    id: "sec-7",
     name: "B Madhav Krishna",
     role: "Secretary",
-    funnyDescription: `"Chess is my number one priority."`,
+    funnyDescription: `"Chess is my number one priority"`,
     email: "bmadhav@iitk.ac.in",
     image: madhavImg,
   },
   {
-    id: "sec-7",
+    id: "sec-8",
     name: "Chaitanya Malhotra",
     role: "Secretary",
-    funnyDescription: `"Everything was satisfying until a bishop ruined my smothered mate :-("`,
+    funnyDescription: `"Everything was satisfying until a bishop ruined my smoothered mate :-("`,
     email: "chaitanya.malhotra@iitk.ac.in",
     image: chaitanyaImg,
   },
   {
-    id: "sec-8",
+    id: "sec-9",
+    name: "Dipin Pandey",
+    role: "Secretary",
+    funnyDescription: `"In my defence, the knight jumped out of nowhere."`,
+    email: "dipinp25@iitk.ac.in",
+    image: dipinImg,
+  },
+  {
+    id: "sec-10",
     name: "Divyesh Bhattacharyya",
     role: "Secretary",
-    funnyDescription: `"Arguing with idiots is like playing chess with a pigeon. No matter how good you are, the bird is going to poop on the board."`,
+    funnyDescription: `"Arguing with idiots is like playing chess with a pigeon. No matter how good you are the bird is going to shit on the board"`,
     email: "divyeshb25@iitk.ac.in",
     image: divyeshImg,
   },
   {
-    id: "sec-9",
+    id: "sec-11",
     name: "Furzaan S. Ullah",
     role: "Secretary",
     funnyDescription: `"Every game is a new puzzle to solve."`,
-    email: "furzaan.ullah@iitk.ac.in",
+    email: "furzaan25@iitk.ac.in",
     image: furzaanImg,
   },
   {
-    id: "sec-10",
+    id: "sec-12",
     name: "Hariom Mishra",
     role: "Secretary",
-    funnyDescription: `"Chess taught me patience. My clock says otherwise."`,
-    email: "hariom.mishra@iitk.ac.in",
+    funnyDescription: `"Chess taught me patience. My clock says otherwise"`,
+    email: "mhariom25@iitk.ac.in",
     image: hariomImg,
-  },
-    {
-    id: "sec-11",
-    name: "K Dheeraj",
-    role: "Secretary",
-    funnyDescription: `"One brilliant move outweighs thousand horrible blunders."`,
-    email: "kdheeraj@iitk.ac.in",
-    image: kdheerajImg,
-  },
-  {
-    id: "sec-12",
-    name: "Kratagya Jain",
-    role: "Secretary",
-    funnyDescription: `"Discovering creative ways not to win at chess."`,
-    email: "kratagya.jain@iitk.ac.in",
-    image: kratagyaImg,
   },
   {
     id: "sec-13",
-    name: "Mayank Bhakhand",
+    name: "K Dheeraj",
     role: "Secretary",
-    funnyDescription: `"It is always better to sacrifice your opponent's pieces."`,
-    email: "mayank.bhakhand@iitk.ac.in",
-    image: mayankBhakhandImg,
+    funnyDescription: `"One brilliant move outweighs thousand horrible blunders"`,
+    email: "deerajsatya25@iitk.ac.in",
+    image: kdheerajImg,
   },
   {
     id: "sec-14",
+    name: "Kratagya Jain",
+    role: "Secretary",
+    funnyDescription: `"Discovering creative ways not to win at chess"`,
+    email: "kratagyaj25@iitk.ac.in",
+    image: kratagyaImg,
+  },
+  {
+    id: "sec-15",
+    name: "Lakshya Agarwal",
+    role: "Secretary",
+    funnyDescription: `"Tick tock tick tock always keep an eye on your clock!"`,
+    email: "lakshyaag25@iitk.ac.in",
+    image: lakshyaImg,
+  },
+  {
+    id: "sec-16",
+    name: "Mayank Bhakhand",
+    role: "Secretary",
+    funnyDescription: `"it is always better to sacrifice your opponent's pieces"`,
+    email: "mayankb25@iitk.ac.in",
+    image: mayankBhakhandImg,
+  },
+  {
+    id: "sec-17",
     name: "Mayank Gautam",
     role: "Secretary",
     funnyDescription: `"I can spot tactics instantly—after the game."`,
@@ -218,15 +216,15 @@ const SECRETARIES = [
     image: mayankGautamImg,
   },
   {
-    id: "sec-15",
-    name: "Mishty Khatwa",
+    id: "sec-18",
+    name: "Mishthy Khatwa",
     role: "Secretary",
-    funnyDescription: `"My pieces have trust issues with me."`,
-    email: "mishty.khatwa@iitk.ac.in",
+    funnyDescription: `"My pieces have trust issues with me"`,
+    email: "mishthy25@iitk.ac.in",
     image: mishthyImg,
   },
   {
-    id: "sec-16",
+    id: "sec-19",
     name: "Nishant",
     role: "Secretary",
     funnyDescription: `"Chess has made me redefine beauty!"`,
@@ -234,238 +232,46 @@ const SECRETARIES = [
     image: nishantImg,
   },
   {
-    id: "sec-17",
-    name: "Pratik Dhanuka",
-    role: "Secretary",
-    funnyDescription: `"I enjoy playing chess, chess enjoys playing with my emotions."`,
-    email: "pratik.dhanuka@iitk.ac.in",
-    image: pratikImg,
-  },
-  {
-    id: "sec-18",
+    id: "sec-20",
     name: "Prajwal Ravi Rai",
     role: "Secretary",
-    funnyDescription: `"I am better than Magnus Carlsen."`,
+    funnyDescription: `"I am better than magnus carlsen"`,
     email: "raipr25@iitk.ac.in",
     image: prajwalImg,
   },
   {
-    id: "sec-19",
+    id: "sec-21",
+    name: "Pratik Dhanuka",
+    role: "Secretary",
+    funnyDescription: `"I enjoy playing chess, chess enjoys playing with my emotions."`,
+    email: "pratikd25@iitk.ac.in",
+    image: pratikImg,
+  },
+  {
+    id: "sec-22",
+    name: "Shaoni Mukherjee",
+    role: "Secretary",
+    funnyDescription: `"Life is like chess. I don't know how to play chess."`,
+    email: "shaonim25@iitk.ac.in",
+    image: shaoniImg,
+  },
+  {
+    id: "sec-23",
+    name: "Siddhant Ghate",
+    role: "Secretary",
+    funnyDescription: `"My favourite chess opening is the one where my opponent doesn't show up."`,
+    email: "siddhantg25@iitk.ac.in",
+    image: siddhantImg,
+  },
+  {
+    id: "sec-24",
     name: "Swayam Krishna Manohari",
     role: "Secretary",
-    funnyDescription: `"I'm not a bad chess player, I'm the biggest philanthropist in the community. I generously donate my pieces to needy opponents every single game."`,
-    email: "swayam.manohari@iitk.ac.in",
+    funnyDescription: `"I’m not a bad chess player, I’m the biggest philanthropist in the community. I generously donate my pieces to needy opponents every single game."`,
+    email: "mkswayam25@iitk.ac.in",
     image: swayamImg,
-  },
-
+  }
 ];
-  
-    /*{
-    id: 'sec-0',
-    name: 'Aarush Waghmare',
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email: `sec0@iitk.ac.in`,
-    image: profileImg
-  },
-  {
-    id:
-    name: 'Aditya Dum',
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email:
-    image: profileImg
-  },
-  {
-    id:
-    name: 'Akshat Joshi',
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email:
-    image: profileImg
-  },
-  {
-    id:'sec-0',
-    name: 'Anant Singh',
-    role: "Secretary",
-    funnyDescription: `"Still looking for the best move"`,
-    email:`anantsi25@iitk.ac.in`,
-    image: 
-  },
-  /*{
-    id:
-    name: 'Arham Nadeem',
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email:
-    image: profileImg
-  },
-  {
-    id:
-    name: 'Arush Jain',
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email:
-    image: profileImg
-  },
-  {
-    id:
-    name: 'Aryan Kurade',
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email:
-    image: profileImg
-  },
-  {
-    id:
-    name: 'Chaitanya Malhotra',
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email:
-    image: profileImg
-  },
-  {
-    id:
-    name: 'Dipin Pandey',
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email:
-    image: profileImg
-  },
-  {
-    id:
-    name: 'Divyesh Bhattacharya',
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email:
-    image: profileImg
-  },
-  
-  {
-    id:
-    name:
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email:
-    image: profileImg
-  },
-  {
-    id:
-    name:
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email:
-    image: profileImg
-  },
-  {
-    id:
-    name:
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email:
-    image: profileImg
-  },
-  {
-    id:
-    name:
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email:
-    image: profileImg
-  },
-  {
-    id:
-    name: 
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email:
-    image: profileImg
-  },
-  {
-    id:
-    name:
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email:
-    image: profileImg
-  },
-  {
-    id:
-    name:
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email:
-    image: profileImg
-  },
-  {
-    id:
-    name:
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email:
-    image: profileImg
-  },
-  
-  {
-    id:
-    name:
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email:
-    image: profileImg
-  },
-  {
-    id:
-    name:
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email:
-    image: profileImg
-  },
-  {
-    id:
-    name: 
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email:
-    image: profileImg
-  },
-  {
-    id:
-    name:
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email:
-    image: profileImg
-  },
-  {
-    id:
-    name:
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email:
-    image: profileImg
-  },
-  {
-    id:
-    name:
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email:
-    image: profileImg
-  },
-  {
-    id:
-    name:
-    role: "Secretary",
-    funnyDescription: `"A very funny description placeholder highlighting their quirk."`,
-    email:
-    image: profileImg
-  },
-*/
- 
-
-
 
 const ContactCard = ({ person, index }) => (
   <motion.div
@@ -478,7 +284,7 @@ const ContactCard = ({ person, index }) => (
     <div className="relative h-72 overflow-hidden flex-shrink-0">
       <img
         alt={person.name}
-        className="w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110 grayscale-[0.6] group-hover:grayscale-0"
+        className="w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110"
         src={person.image}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent transition-opacity duration-500 opacity-90 group-hover:opacity-60"></div>
